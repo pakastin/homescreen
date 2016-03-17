@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node watch",
-    "deploy": "gh-pages",
+    "deploy": "gh-pages -d dist",
     "build-css": "stylus -u nib css/index.styl -o dist/css/main.css",
     "build-js": "rollup -c .rollup.js -f iife js/index.js -o dist/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
