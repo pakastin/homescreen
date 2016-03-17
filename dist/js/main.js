@@ -320,13 +320,12 @@
     var bg = this.bg
     var appStartRects = [];
 
+    var bgStartRect = bg.getBoundingClientRect();
     bg.style.transition = '';
 
-    var bgStartRect = bg.getBoundingClientRect();
-
     apps.list.views.forEach(function (app, i) {
-      app.el.style.transition = '';
       appStartRects[i] = app.el.getBoundingClientRect();
+      app.el.style.transition = '';
     });
 
     this.el.classList.remove('opened');
