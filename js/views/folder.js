@@ -20,12 +20,13 @@ export function Folder () {
 Folder.prototype.open = function () {
   this.opened = true;
 
-  this.el.style.zIndex = 10000;
+  var el = this.el;
 
   var apps = this.apps;
   var bg = this.bg;
   var appStartRects = [];
 
+  el.style.zIndex = 10000;
   bg.style.transition = '';
 
   var bgStartRect = bg.getBoundingClientRect();
@@ -79,6 +80,7 @@ Folder.prototype.open = function () {
 
 Folder.prototype.close = function () {
   var apps = this.apps;
+  var el = this.el;
   var bg = this.bg
   var appStartRects = [];
 
@@ -133,7 +135,7 @@ Folder.prototype.close = function () {
   }, 0);
 
   setTimeout(function () {
-    this.el.style.zIndex = '';
+    el.style.zIndex = '';
   }, 500);
 }
 
