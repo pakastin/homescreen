@@ -1,0 +1,25 @@
+{
+  "name": "homescreen",
+  "version": "0.0.1",
+  "description": "iOS homescreen demo with f",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node watch",
+    "deploy": "gh-pages",
+    "build-css": "stylus -u nib css/index.styl -o dist/css/main.css",
+    "build-js": "rollup -c .rollup.js -f iife js/index.js -o dist/js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pakastin/exec": "0.0.1",
+    "@pakastin/f": "~0.1.10",
+    "chokidar-cli": "~1.2.0",
+    "font-awesome": "~4.5.0",
+    "nib": "~1.1.0",
+    "rollup": "~0.25.4",
+    "rollup-plugin-node-resolve": "~1.5.0",
+    "stylus": "~0.54.2"
+  }
+}
