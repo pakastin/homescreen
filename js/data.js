@@ -7,10 +7,15 @@ var data = [
     ['LinkedIn', 'linkedin', '#0077b5'],
     ['Instagram', 'instagram', '#3f729b'],
     ['Tumblr', 'tumblr', '#35465c'],
-    ['Medium', 'medium', '#020733']
+    ['Medium', 'medium', '#020733'],
+    ['Pinterest', 'pinterest', '#bd081c']
   ]],
   ['Developer tools', [
-    ['Github', 'github', '#333333']
+    ['Github', 'github', '#333333'],
+    ['Font Awesome', 'fort-awesome', '#198965'],
+    ['JSFiddle', 'jsfiddle', '#3ca0f5'],
+    ['CodePen', 'codepen', '#000000'],
+    ['Chrome', 'chrome', '#4788f4']
   ]]
 ];
 
