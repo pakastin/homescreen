@@ -1,0 +1,84 @@
+.app {
+  display: inline-block;
+  width: calc(100% / 3 - 1rem);
+  height: calc(100% / 3 - 2rem);
+  position: relative;
+  margin: 0.5rem;
+}
+.app > .thumb {
+  background-color: #222;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-border-radius: 25%;
+  border-radius: 25%;
+}
+.app > .thumb > i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.app > p {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.5rem 0;
+}
+.folder {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 7.5rem;
+  height: 8.5rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+.folder > .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  -webkit-border-radius: 0.75rem;
+  border-radius: 0.75rem;
+}
+.folder.opened {
+  width: auto;
+  height: auto;
+}
+.folder.opened .app {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.folder > p {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+.homescreen {
+  margin: 0.5rem;
+}
